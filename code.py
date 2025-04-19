@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-query_img = cv2.imread('QueryFoot.png', cv2.IMREAD_GRAYSCALE)   # object to be found
-target_img = cv2.imread('TargetFoot.png', cv2.IMREAD_GRAYSCALE) # image where object exists
+query_img = cv2.imread('images/QueryFoot.png', cv2.IMREAD_GRAYSCALE)   # object to be found
+target_img = cv2.imread('images/TargetFoot.png', cv2.IMREAD_GRAYSCALE) # image where object exists
 
 
 orb = cv2.ORB_create(nfeatures=1000)
@@ -28,4 +28,7 @@ plt.figure(figsize=(15, 10))
 plt.imshow(matched_img)
 plt.title('Object Matching using ORB')
 plt.axis('off')
+plt.savefig('output/matched_keypoints.png')  
+plt.show()  
+
 plt.show()
