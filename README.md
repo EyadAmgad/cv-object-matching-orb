@@ -6,7 +6,7 @@ This project demonstrates how to locate a query object in a larger target image 
 - Feature extraction using ORB
 - Feature matching with BFMatcher
 - Match visualization with Matplotlib
-- Channel-wise ORB experiment (R, G, B vs Grayscale)
+
 
 ## 🖼️ Example
 Given:
